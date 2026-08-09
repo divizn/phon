@@ -1,0 +1,49 @@
+---
+import { FiArrowUpRight } from "solid-icons/fi";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import Particles from "@/components/Particles";
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { links } from "@/constants/links";
+---
+
+<BaseLayout title="Hub" description="Hassan Javed's live projects, all in one place.">
+  <div class="relative">
+    <Particles
+      client:load
+      class="pointer-events-none absolute inset-0 -z-10 animate-fade-in"
+      quantity={80}
+    />
+
+    <main class="mx-auto max-w-4xl px-6 py-24">
+      <section class="animate-fade-in">
+        <h1 class="font-display animate-title-glow text-4xl text-foreground sm:text-5xl">
+          Hub
+        </h1>
+        <p class="mt-4 max-w-xl text-muted-foreground">
+          Everything live, in one place.
+        </p>
+      </section>
+
+      <section class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        {
+          links.map((link) => (
+            <a href={link.url} target="_blank" rel="noopener noreferrer" class="group block">
+              <Card class="h-full duration-200 group-hover:border-foreground/40">
+                <CardHeader>
+                  <CardTitle class="flex items-center justify-between gap-2">
+                    <span class="flex items-center gap-2">
+                      <link.icon class="h-4 w-4 text-muted-foreground" />
+                      {link.name}
+                    </span>
+                    <FiArrowUpRight class="h-4 w-4 text-muted-foreground duration-200 group-hover:text-foreground" />
+                  </CardTitle>
+                  <CardDescription>{link.description}</CardDescription>
+                </CardHeader>
+              </Card>
+            </a>
+          ))
+        }
+      </section>
+    </main>
+  </div>
+</BaseLayout>
