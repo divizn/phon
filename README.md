@@ -1,4 +1,4 @@
-<h1 align=center>hub</h1>
+<h1 align=center>phon</h1>
 
 Landing page linking out to [Hassan Javed](https://github.com/divizn)'s live projects.
 Will eventually replace the portfolio site at [phons.dev](https://phons.dev) — not cut
