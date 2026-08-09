@@ -1,8 +1,8 @@
 <h1 align=center>phon</h1>
 
 Landing page linking out to my live projects. Find me at
-[github.com/divizn](https://github.com/divizn). Will eventually replace the portfolio
-site at [phons.dev](https://phons.dev) — not cut over yet, see CLAUDE.md.
+[github.com/divizn](https://github.com/divizn). Live at
+[phons.dev](https://phons.dev).
 
 ## Stack
 
