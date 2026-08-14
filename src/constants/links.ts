@@ -20,9 +20,6 @@ export const links: HubLink[] = [
   },
   {
     name: "Quotes",
-    // Aspirational: the daily-quote cache isn't implemented in daily-quotes
-    // yet (currently shows a fresh random quote per visit) — fix the app
-    // to match this description before shipping, not the other way round.
     description: "Displays a new random quote each day.",
     url: "https://quotes.phons.dev",
     icon: FiMessageSquare,
