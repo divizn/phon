@@ -1,5 +1,5 @@
 import type { IconTypes } from "solid-icons";
-import { FiFilm, FiMessageSquare, FiCloud, FiUser } from "solid-icons/fi";
+import { FiFilm, FiMessageSquare, FiTerminal, FiUser } from "solid-icons/fi";
 
 export type HubLink = {
   name: string;
@@ -25,11 +25,11 @@ export const links: HubLink[] = [
     icon: FiMessageSquare,
   },
   {
-    name: "Weather",
+    name: "Battleships",
     description:
-      "Look up current weather conditions for any location, powered by OpenWeatherMap.",
-    url: "https://weather.phons.dev",
-    icon: FiCloud,
+      "Battleships played in your terminal over SSH, against a bot or a friend with a room code.",
+    url: "https://battleships.phons.dev",
+    icon: FiTerminal,
   },
   {
     name: "Portfolio",
