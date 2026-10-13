@@ -1,8 +1,7 @@
 ---
-import { FiArrowUpRight } from "solid-icons/fi";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Particles from "@/components/Particles";
-import { Card, CardHeader, CardTitle, CardDescription } from "@ph0n/theme-kit/ui";
+import { BentoGrid, BentoGridItem } from "@ph0n/theme-kit/ui";
 import { links } from "@/constants/links";
 ---
 
@@ -16,7 +15,9 @@ import { links } from "@/constants/links";
 
     <main class="relative mx-auto max-w-4xl px-6 py-24">
       <section class="animate-fade-in">
-        <h1 class="font-display animate-title-glow text-4xl text-accent sm:text-5xl">
+        <h1
+          class="font-display animate-title-glow text-4xl text-accent sm:text-5xl"
+        >
           phon
         </h1>
         <p class="mt-4 max-w-xl text-muted-foreground">
@@ -24,26 +25,21 @@ import { links } from "@/constants/links";
         </p>
       </section>
 
-      <section class="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <BentoGrid class="mt-12" client:visible>
         {
           links.map((link) => (
-            <a href={link.url} target="_blank" rel="noopener noreferrer" class="group block">
-              <Card class="h-full duration-200 group-hover:border-accent">
-                <CardHeader>
-                  <CardTitle class="flex items-center justify-between gap-2">
-                    <span class="flex items-center gap-2">
-                      <link.icon class="h-4 w-4 text-muted-foreground" />
-                      {link.name}
-                    </span>
-                    <FiArrowUpRight class="h-4 w-4 text-muted-foreground duration-200 group-hover:text-accent" />
-                  </CardTitle>
-                  <CardDescription>{link.description}</CardDescription>
-                </CardHeader>
-              </Card>
-            </a>
+            <BentoGridItem
+              href={link.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={link.name}
+              icon={link.icon}
+            >
+              {link.description}
+            </BentoGridItem>
           ))
         }
-      </section>
+      </BentoGrid>
     </main>
   </div>
 </BaseLayout>
