@@ -18,8 +18,8 @@ importers:
         specifier: ^5.3.0
         version: 5.3.0
       '@ph0n/theme-kit':
-        specifier: ^0.3.0
-        version: 0.3.0(solid-js@1.9.14)
+        specifier: ^0.4.0
+        version: 0.4.0(solid-js@1.9.14)
       '@tailwindcss/vite':
         specifier: ^4.3.3
         version: 4.3.3(vite@8.2.1(@types/node@24.13.3)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.0))
@@ -1147,8 +1147,8 @@ packages:
   '@oxc-project/types@0.143.0':
     resolution: {integrity: sha512-u6JZdLBTLotrNC9Vd6vPssINdzcCzleKAH6EJKImQb7GtYvX5keN2dxkoK44stCc4tffE6QQRtZTXVSzsLUlWA==}
 
-  '@ph0n/theme-kit@0.3.0':
-    resolution: {integrity: sha512-ZDL7ddKNTql3qbBtoFO4peBmo1/8swoKgG9re3JR9bhnE5ZNvAhHDUMVmVVir5HsiFgJ8KwhkwYgomVgaK63cA==}
+  '@ph0n/theme-kit@0.4.0':
+    resolution: {integrity: sha512-SxDwrk3+iRYHKvszIzxxWk/O7HIzqpHuYz80+oq9+xPi6C+LqcoIdODPZDxvieq/eqJWIkFrercj4b7/1szWyA==}
     peerDependencies:
       solid-js: ^1.9.0
     peerDependenciesMeta:
@@ -4103,7 +4103,7 @@ snapshots:
 
   '@oxc-project/types@0.143.0': {}
 
-  '@ph0n/theme-kit@0.3.0(solid-js@1.9.14)':
+  '@ph0n/theme-kit@0.4.0(solid-js@1.9.14)':
     dependencies:
       class-variance-authority: 0.7.1
       clsx: 2.1.1
